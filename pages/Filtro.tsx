@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Filtro(props: any) {
-  const [coinName, setCoinName] = useState("");
+  const [coinName, setCoinName] = useState<string>("");
 
   const onFilter = (e: { target: { value: any } }) => {
     const newCoinName = e.target.value;
